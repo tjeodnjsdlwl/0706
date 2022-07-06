@@ -80,15 +80,18 @@ main > div + div { margin-top: 10px; }
     width: calc(100% - 160px);
     overflow: hidden;
     box-sizing: border-box;
+    float: left;
 }
 .box1 .bottom .left li {
-    width: calc((100% - 30px) / 3);
+    width: calc((100% - 20px) / 3);
     height: 100px;
     background: #f00;
     float: left;
     margin-right: 10px;
 }
-
+.box1 .bottom .left li:nth-child(3n){
+    margin-right: 0;
+}
 .box1 .bottom .left li:nth-child(n+4) {
     margin-top: 10px;
 }
