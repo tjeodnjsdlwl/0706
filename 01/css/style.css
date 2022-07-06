@@ -1,0 +1,79 @@
+*{margin: 0; padding: 0; font: inherit;}
+
+header{
+    background: #000;
+    height: 100px;
+}
+
+body{background: #ccc;}
+
+main{
+    width: 800px;
+    margin: 10px auto;
+}
+
+main > div+div{
+    margin-top: 10px;
+}
+
+
+.box1{
+    background: #fff;
+    height: 200px;
+}
+
+.box2{
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.box2 div{
+    width: calc((100% - 20px)/3);
+    height: 100px;
+    background: #f00;
+    /* float: left; */
+    margin-left: 10px;
+}
+
+.box2 div:first-child{
+    margin-left: 0;
+}
+
+.box3{
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.box3 div{
+    width: calc((100% - 40px)/5);
+    height: 100px;
+    background: #fff;
+    margin-left: 10px;
+    /* float: left; */
+}
+
+.box3 div:first-child{
+    margin-left: 0;
+}
+
+.box4{
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #fff;
+}
+
+.box4 div{
+    width: calc((100% - 10px)/2);
+    height: 100px;
+    background: #f00;
+    /* float: left; */
+    margin-left: 10px;
+}
+
+.box4 div:first-child{
+    margin-left: 0;
+}

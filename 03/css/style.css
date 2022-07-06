@@ -1,0 +1,132 @@
+* {margin: 0; padding: 0; font: inherit;}
+body {line-height: 1;}
+ul {list-style: none;}
+a {text-decoration: none; color: inherit;}
+img {vertical-align: top;}
+
+header {
+    background: #ccc;
+    height: 100px;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px; height: 50px;
+    background: #f00;
+    /* overflow: hidden; */
+}
+
+header .logo a {
+    display: block;
+    height: 100%;
+}
+
+header .sns {
+    /* float: left; */
+
+
+}
+header .login {
+    /* float: right; */
+}
+
+header .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sc-slide {
+    background: #888;
+    height: 300px;
+    position: relative;
+}
+
+.sc-slide .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px; height: 50px;
+    background: #f00;
+}
+.sc-slide .btn.prev { left: 10px; }
+.sc-slide .btn.next { right: 10px;}
+
+.sc-slide .pagination {
+    position: absolute;
+    left: 50%; bottom: 10px;
+    transform: translateX(-50%);
+    /* overflow: hidden; */
+}
+
+.sc-slide .pagination .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sc-slide .pagination a {
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background: #f00;
+    /* float: left; */
+}
+
+.sc-slide .pagination a.active { background: #000;}
+
+
+.sc-event { padding: 100px 0;}
+.sc-event h3 {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.sc-event ul {
+    width: 800px;
+    /* overflow: hidden; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.sc-event ul li {
+    width: calc((100% - 20px)/3);
+    background: #000;
+    /* float: left; */
+    margin-right: 10px;
+}
+
+.sc-event ul li:last-child{ margin-right: 0; }
+
+.sc-event ul li a {
+    display: block;
+    padding: 10px;
+}
+.sc-event ul li a img {
+    width: 100%;
+}
+.sc-event ul li a p {
+    background: #fff;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+
+.sc-board {
+    background: #000;
+    padding: 100px 0;
+}
+.sc-board ul {
+    width: 800px;
+    margin: 0 auto;
+}
+.sc-board ul li {
+    background: #fff;
+    height: 100px;
+}
+
+.sc-board ul li + li {
+    margin-top: 10px;
+}

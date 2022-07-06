@@ -1,0 +1,125 @@
+* {margin: 0; padding: 0; font: inherit;}
+body {line-height: 1;}
+ul {list-style: none;}
+a {text-decoration: none; color: inherit;}
+img {vertical-align: top;}
+
+header {}
+header .logo-area {
+    background: #ccc;
+    height: 100px;
+    position: relative;
+    /* overflow: hidden; */
+}
+header .logo-area .logo {
+    background: #f00;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px; height: 50px;
+}
+header .logo-area .logo a {
+    display: block;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+header .logo-area .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo-area .sns {
+    /* float: left; */
+}
+header .logo-area .login {
+    /* float: right; */
+}
+
+header .gnb-area {
+    background: #888;
+    display: flex;
+    align-items: center;
+
+}
+header .gnb-area ul {
+    /* overflow: hidden; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+header .gnb-area ul li {
+    background: #f00;
+    height: 50px;
+    /* float: left; */
+}
+header .gnb-area ul li a {
+    display: block;
+    padding: 0 10px;
+    line-height: 50px;
+}
+
+main {
+    width: 800px;
+    margin: 10px auto;
+}
+
+main > div { background: #ccc; padding: 10px; }
+main > div + div { margin-top: 10px; }
+
+.box1 > div { padding: 10px; background: #fff;}
+.box1 > div + div { margin-top: 10px;}
+
+.box1 .top { height: 200px; }
+
+.box1 .bottom {
+    overflow: hidden;
+}
+.box1 .bottom .left {
+    width: calc(100% - 160px);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.box1 .bottom .left li {
+    width: calc((100% - 30px) / 3);
+    height: 100px;
+    background: #f00;
+    float: left;
+    margin-right: 10px;
+}
+
+.box1 .bottom .left li:nth-child(n+4) {
+    margin-top: 10px;
+}
+.box1 .bottom .right {
+    width: 150px;
+    height: 210px;
+    background: #f00;
+    float: right;
+}
+
+
+
+.box2 {}
+.box2 ul {
+
+}
+.box2 ul li {
+}
+.box2 ul li a{
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-between;
+}
+.box2 ul li a img {
+    width: 150px; height: 150px;
+}
+.box2 ul li a p {
+    background: #fff;
+    width: calc(100% - 160px);
+    /* float: right; */
+    height: 150px;
+}
+
+.box2 ul li + li { margin-top: 10px;}
